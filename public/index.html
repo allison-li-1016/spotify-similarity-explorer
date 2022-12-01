@@ -7,7 +7,7 @@
   <!-- Uncomment if you want your page to NOT be indexed by search engines: -->
   <!-- <meta name="robots" content="none"> -->
   <link rel="stylesheet" href="style.css" />
-  <title>Spotify similarity explorer (for top 500 songs from 1921-2021)</title>
+    <title>Spotify similarity explorer (for top 500 songs from 1921-2021)</title>
 
   <!-- Uncomment if using d3: -->
   <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
@@ -20,7 +20,13 @@
 <body>
   <body style="background-color:black;" text="#ffffff"></body>
   <header>
-      <h1 {text-align: center;}><a href="."> Spotify Similarity Explorer for Top Tracks</a></h1>
+    <style>
+      @font-face { font-family: 'Spotify Circular'; src: url('CircularSpotifyHead-Bold.otf'); }
+      h1{font-family: 'Spotify Circular'}
+    </style>
+      <div>
+          <h1><a href="."> Spotify Similarity Explorer for Top Tracks</a></h1>
+      </div>
   </header>
 
   <center>
@@ -34,6 +40,10 @@
   </center>
 
   <section>
+    <style>
+      @font-face { font-family: 'Spotify Circular'; src: url('CircularSpotifyHead-Bold.otf'); }
+      h2{font-family: 'Spotify Circular'}
+    </style>
     <h2 style="color: #1DB954;">Artists are being sued over similar-sounding songs</h2>
     <p>
       In the age of TikTok songs and democratization of music production, some big artists are being
@@ -51,6 +61,10 @@
   </section>
 
   <section>
+    <style>
+      @font-face { font-family: 'Spotify Circular'; src: url('CircularSpotifyHead-Bold.otf'); }
+      h2{font-family: 'Spotify Circular'}
+    </style>
     <h2 style="color: #1DB954;">What makes songs sound similar to each other?</h2>
     <center>
       <img src="images/DejaVu_CruelSummer.PNG"
@@ -65,7 +79,7 @@
     </center>
     <p>
       There are many criteria that influence songs. In the example above, see how songs like California Gurls and Tik TikTok have
-      much higher rates for danceability and energy compared to other songs such as "Stay With Me" and "I Won't Back Down" (as noted by the different range values).
+      much higher rates for danceability and energy compared to other songs such as "Stay With Me" and "I Won't Back Down" (as noted by the different range values). We also took a look at Olivia Rodrigo's Deja Vu vs. Taylor Swift's Cruel Summer given the controversy regarding the similarity of the bridge.
       Some features of similar-sounding songs include Danceability, Energy, Tempo and Time Signature (Rhythm).
       A less measurable feature includes the lyrics themselves, such as in the case of Dua Lipa's song "Levitating".
       In this case, the lyrics rather than other quantitative measures of the song were noted as very similar.
@@ -85,13 +99,16 @@
   </section>
 
   <section>
+    <style>
+      @font-face { font-family: 'Spotify Circular'; src: url('CircularSpotifyHead-Bold.otf'); }
+      h2{font-family: 'Spotify Circular'}
+    </style>
     <h2 style="color: #1DB954;">How have popular songs changed over time?</h2>
     <p>
       Trends come and go, as do music tastes. In the visualization below, see how the average
       features of popular songs have changed over time in the last 100 years. What do listeners
       value more in songs? Do they value danceability? Tempo? Do certain time signatures give off better vibes than others?
-      In this visualization, you can choose a song feature from the list and see how that feature has changed on average
-      over the last 100 years for the year's most popular songs.
+      In this visualization, you can look at average metrics (danceability, tempo, etc.) over time for the top 5 songs of that year by popularity index.
     </p>
 
     <center>
