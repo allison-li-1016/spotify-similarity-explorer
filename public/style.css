@@ -31,5 +31,12 @@ h1 {
 }
 
 a {
+  color: #1DB954;
   text-decoration: none;
+}
+
+header{
+  padding: 64px 32px;
+  display: flex;
+	background: url('images/spotify_background.PNG');
 }
