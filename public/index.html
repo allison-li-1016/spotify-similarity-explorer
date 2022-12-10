@@ -37,10 +37,10 @@
 
   <p>
     Our project explores the Spotify track dataset, which highlights audio features of over 600k tracks created over the last
-    100 years. It uses popularity metrics such as number of interactions and streams to rank the most popular Spotify songs and 
+    100 years. It uses popularity metrics such as number of interactions and streams to rank the most popular Spotify songs and
     artists. In this visualization, you can view the popularity index of the top 200 Spotify artists, check and uncheck artists
     you want to include in the graph, search for artists and edit the popularity index range to see which artists fall into what
-    specific popularity index ranges. 
+    specific popularity index ranges.
 
   </p>
 
@@ -76,15 +76,46 @@
     </style>
     <h2 style="color: #1DB954;">What makes songs sound similar to each other?</h2>
     <center>
-      <img src="images/DejaVu_CruelSummer.PNG"
+      <div class="imagesContainer">
+        <div class="container">
+          <input type="checkbox" id="zoomImage1">
+          <label for="zoomImage1">
+            <img src="images/DejaVu_CruelSummer.PNG"
+              width="400"
+              height="300"
+              class="lImage" />
+          </label>
+        </div>
+        <div class="container">
+          <input type="checkbox" id="zoomImage2">
+          <label for="zoomImage2">
+            <img src="images/StayWithMe_IWontBackDown.PNG"
+              width="400"
+              height="300"
+              class="mImage"
+              />
+          </label>
+        </div>
+        <div class="container">
+          <input type="checkbox" id="zoomImage3">
+          <label for="zoomImage3">
+            <img src="images/TikTok_CaliforniaGurls.PNG"
+              width="400"
+              height="300"
+              class="rImage"
+              />
+          </label>
+        </div>
+      </div>
+      <!-- <img src="images/DejaVu_CruelSummer.PNG"
         width="400"
-        height="300" />
-      <img src="images/StayWithMe_IWontBackDown.PNG"
+        height="300" /> -->
+      <!-- <img src="images/StayWithMe_IWontBackDown.PNG"
         width="400"
-        height="300"/>
-      <img src="images/TikTok_CaliforniaGurls.PNG"
+        height="300"/> -->
+      <!-- <img src="images/TikTok_CaliforniaGurls.PNG"
         width="400"
-        height="300"/>
+        height="300"/> -->
     </center>
     <p>
       There are many criteria that influence songs. In the example above, see how songs like California Gurls and Tik TikTok have
@@ -118,9 +149,9 @@
       features of popular songs have changed over time in the last 100 years. What do listeners
       value more in songs? Do they value danceability? Tempo? Do certain time signatures give off better vibes than others?
       In this visualization, you can look at average metrics (danceability, tempo, etc.) over time for the top 5 songs of that year by popularity index.
-      A major drop in the danceability and energy of songs can be seen in the period of time preceding the Great Depression, as well 
+      A major drop in the danceability and energy of songs can be seen in the period of time preceding the Great Depression, as well
       as a peak during the Roaring 20s. The general danceability and energy of popular songs has also been steadily increasing over time
-      as the data approaches modern day pop music. 
+      as the data approaches modern day pop music.
     </p>
 
     <center>

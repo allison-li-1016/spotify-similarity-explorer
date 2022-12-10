@@ -50,3 +50,32 @@ h2 {
 li {
   margin: 50px;
 }
+
+input[type=checkbox] {
+  display: none;
+}
+
+.container img {
+  margin: 1rem;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > .mImage {
+  transform: scale(2) translate(0,25px);
+  cursor: zoom-out;
+}
+
+input[type=checkbox]:checked ~ label > .lImage {
+  transform: scale(2) translate(100px, 25px);
+}
+
+input[type=checkbox]:checked ~ label > .rImage {
+  transform: scale(2) translate(-100px, 25px);
+}
+
+.imagesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
